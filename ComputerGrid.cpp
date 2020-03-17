@@ -180,8 +180,10 @@ void ComputerGrid::fire(int x, int y, bool& playerHit)
 	}
 
 	printGrid();
-	if (!playerHit)
-		system("pause");
+	/*if (!playerHit)
+		//system("pause");
+		Utils::pause();
+	*/
 }
 
 void ComputerGrid::updateTurnGrid(ComputerGrid& compGrid)
@@ -325,7 +327,7 @@ void ComputerGrid::updateProbs()
 				{
 					Utils::clearScreen();
 					printProbGrid();
-					system("pause");
+					//system("pause");
 				}*/
 			}
 		}
@@ -375,7 +377,7 @@ void ComputerGrid::updateProbs()
 				{
 					Utils::clearScreen();
 					printProbGrid();
-					system("pause");
+					//system("pause");
 				}*/
 			}
 		}
